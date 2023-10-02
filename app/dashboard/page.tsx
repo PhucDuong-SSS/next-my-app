@@ -1,7 +1,13 @@
-import Image from 'next/image'
+'use client'
+
 import styles from '../page.module.css'
+import { usePathname} from 'next/navigation'
+
 
 export default function DashboardPage() {
+const path = usePathname()
+console.log(path);
+
   return (
     <main className={styles.main}>
       <div className={styles.title}>
